@@ -1,4 +1,4 @@
-environment:
+environments:
 - name: lab
   vpcTarget:
         vpcId: vpc-09063e36dff8e17f4
