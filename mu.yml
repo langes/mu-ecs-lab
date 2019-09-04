@@ -1,5 +1,14 @@
 environments:
-- name: lab
+- name: acceptance
+  vpcTarget:
+        vpcId: vpc-09063e36dff8e17f4
+        instanceSubnetIds:          # The list of subnets to use for ECS container instances
+          - subnet-0ced1278e41b8a692
+          - subnet-0c821578c4ef3992a
+        elbSubnetIds:               # The list of subnets to use for ELBs
+          - subnet-04091d60bfeaed7ba
+          - subnet-0ec42108bb5cb1a74
+- name: production
   vpcTarget:
         vpcId: vpc-09063e36dff8e17f4
         instanceSubnetIds:          # The list of subnets to use for ECS container instances
