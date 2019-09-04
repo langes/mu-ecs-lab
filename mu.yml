@@ -1,5 +1,6 @@
 environments:
 - name: acceptance
+  provider: ecs-fargate
   vpcTarget:
         vpcId: vpc-09063e36dff8e17f4
         instanceSubnetIds:          # The list of subnets to use for ECS container instances
@@ -9,6 +10,7 @@ environments:
           - subnet-04091d60bfeaed7ba
           - subnet-0ec42108bb5cb1a74
 - name: production
+  provider: ecs-fargate
   vpcTarget:
         vpcId: vpc-09063e36dff8e17f4
         instanceSubnetIds:          # The list of subnets to use for ECS container instances
